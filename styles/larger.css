@@ -1,0 +1,32 @@
+@media screen and (min-width: 32.5rem) {
+    #menu {
+        display: none;
+    }
+
+    nav {
+        position: static;
+        display: block;
+        width: auto;
+        background: transparent;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .navigation li a {
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+    }
+
+    .content-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

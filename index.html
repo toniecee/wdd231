@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Course Home Page</title>
+    <meta name="description" content="WDD 231 Course Home Page for Web Frontend Development I">
+    <meta name="author" content="Your Name">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 32.5rem)">
+    
+    <!-- JavaScript Files with defer -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="images/logo.svg" alt="Site Logo" width="40" height="40">
+            <span class="site-title">Anthony Agbonoga</span>
+        </div>
+        <button id="menu" aria-label="Toggle Navigation Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        
+        <div class="content-grid">
+            <section class="card">
+                <h2>About Me</h2>
+                <p>Hello! I am a software development student passionate about building clean, responsive, and accessible web experiences. I enjoy turning complex problems into intuitive digital solutions using modern frontend technologies.</p>
+            </section>
+
+            <section class="card profile-card">
+                <h2>Student Photo</h2>
+                <img src="images/profile.webp" alt="Student Profile Photo" loading="lazy" width="300" height="400">
+            </section>
+        </div>
+
+        <section class="card courses-section">
+            <h2>Web Certificate Courses</h2>
+            <div class="filter-buttons">
+                <button id="allBtn">All</button>
+                <button id="cseBtn">CSE</button>
+                <button id="wddBtn">WDD</button>
+            </div>
+            <div id="courseList" class="course-grid"></div>
+            <p id="totalCredits" class="credits-text"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+            <a href="https://github.com" target="_blank" aria-label="GitHub">GitHub</a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">Twitter</a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> • Anthony Agbonoga • Benin, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
