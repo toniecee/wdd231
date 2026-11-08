@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edo Chamber of Commerce - Business Directory</title>
+    <meta name="description"
+        content="Official Business Directory of the Edo Chamber of Commerce. Explore local member businesses, gold sponsors, and networking resources.">
+    <meta name="author" content="Anthony Agbonoga">
+
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Edo Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://toniecee.github.io/wdd231/chamber/images/hero.jpg">
+    <meta property="og:url" content="https://tonieceegithub.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Explore local businesses and member organizations in Edo State.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- CSS Stylesheets (Reset/Normalize first, then small.css, then larger.css) -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript File (deferred) -->
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo-box">
+                <img src="images/logo.png" alt="Chamber Logo" width="50" height="50">
+                <span class="site-title">Edo Chamber of Commerce</span>
+            </div>
+            <button id="menu-button" aria-label="Toggle Navigation Menu">&#9776;</button>
+        </div>
+        <nav>
+            <ul id="nav-menu" class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <h1>Directory</h1>
+
+        <!-- Grid / List View Toggle Buttons -->
+        <div class="view-toggle">
+            <button id="grid" class="active" title="Grid View">Grid</button>
+            <button id="list" title="List View">List</button>
+        </div>
+
+        <!-- Dynamic Member Container -->
+        <div id="members-container" class="grid">
+            <!-- Member cards will be dynamically loaded here via JavaScript -->
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Edo Chamber of Commerce</h3>
+                <p>123 Government Reservation Area</p>
+                <p>Benin City, Edo State, Nigeria</p>
+                <p>info@edochamber.org</p>
+                <p>+234 800 555 2300</p>
+            </div>
+            <div class="social-links">
+                <a href="https://youtube.com" target="_blank" aria-label="YouTube">YouTube</a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">Twitter</a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+            <div class="footer-meta">
+                <p>WDD 231 Class Project</p>
+                <p>Anthony Agbonoga</p>
+                <p>&copy; <span id="current-year"></span> Edo Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

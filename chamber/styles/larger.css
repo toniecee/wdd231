@@ -1,0 +1,46 @@
+/* Larger View Styles (larger.css) */
+@media (min-width: 768px) {
+    .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #menu-button {
+        display: none;
+        /* Hide hamburger menu on desktop */
+    }
+
+    nav {
+        margin-top: 0;
+    }
+
+    .navigation {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-end;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .navigation li a {
+        border-top: none;
+        padding: 1rem 1.5rem;
+    }
+
+    /* Adjust list view layout for wider screens */
+    #members-container.list section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .social-links {
+        justify-content: flex-start;
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name": "Edo Agro Processing Ltd",
+            "address": "15 Murtala Muhammed Way, Benin City",
+            "phone": "+234 803 123 4567",
+            "website": "https://edoagroprocessing.com",
+            "image": "agro.jpg",
+            "membership": 3,
+            "tagline": "Quality Palm Oil & Cassava Products"
+        },
+        {
+            "name": "Benin Web Solutions",
+            "address": "8 Sakponba Road, Benin City",
+            "phone": "+234 805 987 6543",
+            "website": "https://beninwebsolutions.ng",
+            "image": "tech.jpg",
+            "membership": 2,
+            "tagline": "Modern Web Development & IT Support"
+        },
+        {
+            "name": "Ugbowo Supermarket & Stores",
+            "address": "22 Ugbowo Lagos Road, Benin City",
+            "phone": "+234 802 345 6789",
+            "website": "https://ugbowostores.com",
+            "image": "store.jpg",
+            "membership": 1,
+            "tagline": "Your Everyday Household Needs"
+        },
+        {
+            "name": "Oredo Hospitality & Hotels",
+            "address": "5 Reservation Road, GRA, Benin City",
+            "phone": "+234 807 456 1230",
+            "website": "https://oredohotels.com",
+            "image": "hotel.jpg",
+            "membership": 3,
+            "tagline": "Comfort and Luxury in the Heart of Benin"
+        },
+        {
+            "name": "Midwest Logistics & Transport",
+            "address": "12 Sapele Road, Benin City",
+            "phone": "+234 810 112 2334",
+            "website": "https://midwestlogistics.ng",
+            "image": "logistics.jpg",
+            "membership": 2,
+            "tagline": "Fast and Safe Delivery Across Nigeria"
+        },
+        {
+            "name": "Edo Arts & Crafts Emporium",
+            "address": "Aka Street, Ring Road, Benin City",
+            "phone": "+234 813 556 7889",
+            "website": "https://edoarts.com",
+            "image": "arts.jpg",
+            "membership": 1,
+            "tagline": "Authentic Bronze Castings and Cultural Artifacts"
+        },
+        {
+            "name": "NaijaTech Hub",
+            "address": "45 Ekehuan Road, Benin City",
+            "phone": "+234 818 990 1122",
+            "website": "https://naijatechhub.org",
+            "image": "hub.jpg",
+            "membership": 2,
+            "tagline": "Empowering the Next Generation of Programmers"
+        }
+    ]
+}
