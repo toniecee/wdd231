@@ -196,16 +196,6 @@ footer {
     text-align: center;
 }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.social-links a {
-    color: white;
-    text-decoration: none;
-}
 
 .footer-meta {
     font-size: 0.85rem;
@@ -232,7 +222,7 @@ footer {
     margin-bottom: 0.75rem;
 }
 
-/* Circular Social Media Buttons in Footer */
+/* Consolidated Social Links Styles */
 .social-links {
     display: flex;
     justify-content: center;
@@ -246,35 +236,17 @@ footer {
     align-items: center;
     width: 40px;
     height: 40px;
-    background-color: rgba(255, 255, 255, 0.15);
-    color: white;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 0.85rem;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.social-links a:hover {
-    background-color: var(--secondary-color);
-}
-
-
-.social-links a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
     background-color: var(--secondary-color);
     color: white;
     border-radius: 50%;
     text-decoration: none;
-    font-size: 0.85rem;
-    font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
 .social-links a:hover {
     background-color: var(--accent-color);
+}
+
+.social-links svg {
+    fill: currentColor;
 }
