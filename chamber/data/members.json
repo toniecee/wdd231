@@ -1,67 +1,58 @@
-{
-    "companies": [
-        {
-            "name": "Edo Agro Processing Ltd",
-            "address": "15 Murtala Muhammed Way, Benin City",
-            "phone": "+234 803 123 4567",
-            "website": "https://edoagroprocessing.com",
-            "image": "agro.jpg",
-            "membership": 3,
-            "tagline": "Quality Palm Oil & Cassava Products"
-        },
-        {
-            "name": "Benin Web Solutions",
-            "address": "8 Sakponba Road, Benin City",
-            "phone": "+234 805 987 6543",
-            "website": "https://beninwebsolutions.ng",
-            "image": "tech.jpg",
-            "membership": 2,
-            "tagline": "Modern Web Development & IT Support"
-        },
-        {
-            "name": "Ugbowo Supermarket & Stores",
-            "address": "22 Ugbowo Lagos Road, Benin City",
-            "phone": "+234 802 345 6789",
-            "website": "https://ugbowostores.com",
-            "image": "store.jpg",
-            "membership": 1,
-            "tagline": "Your Everyday Household Needs"
-        },
-        {
-            "name": "Oredo Hospitality & Hotels",
-            "address": "5 Reservation Road, GRA, Benin City",
-            "phone": "+234 807 456 1230",
-            "website": "https://oredohotels.com",
-            "image": "hotel.jpg",
-            "membership": 3,
-            "tagline": "Comfort and Luxury in the Heart of Benin"
-        },
-        {
-            "name": "Midwest Logistics & Transport",
-            "address": "12 Sapele Road, Benin City",
-            "phone": "+234 810 112 2334",
-            "website": "https://midwestlogistics.ng",
-            "image": "logistics.jpg",
-            "membership": 2,
-            "tagline": "Fast and Safe Delivery Across Nigeria"
-        },
-        {
-            "name": "Edo Arts & Crafts Emporium",
-            "address": "Aka Street, Ring Road, Benin City",
-            "phone": "+234 813 556 7889",
-            "website": "https://edoarts.com",
-            "image": "arts.jpg",
-            "membership": 1,
-            "tagline": "Authentic Bronze Castings and Cultural Artifacts"
-        },
-        {
-            "name": "NaijaTech Hub",
-            "address": "45 Ekehuan Road, Benin City",
-            "phone": "+234 818 990 1122",
-            "website": "https://naijatechhub.org",
-            "image": "hub.jpg",
-            "membership": 2,
-            "tagline": "Empowering the Next Generation of Programmers"
-        }
-    ]
-}
+[
+  {
+    "name": "Edo Agribusiness Alliance",
+    "address": "15 Murtala Mohammed Way, Benin City",
+    "phone": "+234 52 123 4567",
+    "website": "https://edoagribusiness.example.com",
+    "image": "agro.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Auchi Artisanal Crafts",
+    "address": "77 Commercial Avenue, Auchi",
+    "phone": "+234 57 333 8901",
+    "website": "https://auchiartisans.example.com",
+    "image": "arts.jpg",
+    "membership": 1
+  },
+  {
+    "name": "Royal Palm Hotel & Suites",
+    "address": "12 Reservation Road, GRA, Benin City",
+    "phone": "+234 52 444 9812",
+    "website": "https://royalpalm.example.com",
+    "image": "hotel.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Ugbowo Tech Hub",
+    "address": "8 Ugbowo Lagos Road, Benin City",
+    "phone": "+234 52 555 0192",
+    "website": "https://ugbowotech.example.com",
+    "image": "hub.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Siluko Logistics & Transport",
+    "address": "3 Expressway Bypass, Benin City",
+    "phone": "+234 52 444 7829",
+    "website": "https://silukologistics.example.com",
+    "image": "logistics.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Oredo Fresh Produce Mart",
+    "address": "19 Mission Road, Benin City",
+    "phone": "+234 52 777 3412",
+    "website": "https://oredofresh.example.com",
+    "image": "store.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Benin Software Solutions",
+    "address": "25 Sapele Road, Benin City",
+    "phone": "+234 52 333 1188",
+    "website": "https://beninsoftware.example.com",
+    "image": "tech.jpg",
+    "membership": 2
+  }
+]
