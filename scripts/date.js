@@ -1,8 +1,7 @@
-// Set current year in footer
 const currentYearSpan = document.querySelector('#currentyear');
+const lastModifiedParagraph = document.querySelector('#lastModified');
+
 const today = new Date();
 currentYearSpan.textContent = today.getFullYear();
 
-// Set last modified date in footer
-const lastModifiedParagraph = document.querySelector('#lastModified');
-lastModifiedParagraph.textContent = `Last Modification: ${document.lastModified}`;
+lastModifiedParagraph.innerHTML = `Last Modification: <span class="highlight">${document.lastModified}</span>`;

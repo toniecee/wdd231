@@ -1,4 +1,4 @@
-@media screen and (min-width: 32.5rem) {
+@media (min-width: 768px) {
     #menu {
         display: none;
     }
@@ -8,25 +8,27 @@
         display: block;
         width: auto;
         background: transparent;
+        box-shadow: none;
     }
 
     .navigation {
         display: flex;
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
     .navigation li a {
         padding: 0.5rem 1rem;
+        border-bottom: none;
         border-radius: 4px;
     }
 
-    .content-grid {
+    .hero-grid {
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 1.5rem;
     }
 
-    .course-grid {
+    .courses-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
