@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edo State Chamber of Commerce - Home</title>
+    <meta name="description"
+        content="Welcome to the Edo State Chamber of Commerce home page. Discover local business events, weather updates, and member spotlights.">
+    <meta name="author" content="Anthony Agbonoga">
+
+    <meta property="og:title" content="Edo State Chamber of Commerce Home">
+    <meta property="og:description" content="Official landing page of the Edo State Chamber of Commerce.">
+    <meta property="og:image" content="https://anthonyagbonoga.github.io/wdd231/chamber/images/hero.jpg">
+    <meta property="og:url" content="https://anthonyagbonoga.github.io/wdd231/chamber/index.html">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="images/logo.png" alt="Logo" width="40" height="40">
+            <span class="site-title">Edo Chamber of Commerce</span>
+        </div>
+        <button id="menu" aria-label="Toggle Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="images/hero.jpg" alt="Edo State Business District Hero" width="1200" height="600">
+            <div class="hero-msg">
+                <h2>Empowering Commerce in Edo State</h2>
+                <a class="cta-btn" href="#">Join the Chamber</a>
+            </div>
+        </div>
+
+        <div class="home-grid">
+            <section class="card events-card">
+                <h2>Current Events</h2>
+                <ul>
+                    <li><strong>Annual Agribusiness Summit:</strong> Nov 20 at Benin City Hall.</li>
+                    <li><strong>Digital Trade Workshop:</strong> Dec 2 featuring local tech leaders.</li>
+                    <li><strong>SME Grant Info Session:</strong> Dec 10 via live webinar.</li>
+                </ul>
+            </section>
+
+            <section class="card weather-card">
+                <h2>Weather</h2>
+                <div class="weather-content">
+                    <img id="weather-icon" src="" alt="Weather Icon">
+                    <div>
+                        <p id="current-temp"></p>
+                        <p id="weather-desc"></p>
+                    </div>
+                </div>
+                <hr>
+                <div id="forecast-container">
+                    <h3>3-Day Forecast</h3>
+                    <p id="forecast-1"></p>
+                    <p id="forecast-2"></p>
+                    <p id="forecast-3"></p>
+                </div>
+            </section>
+
+            <section class="card spotlights-card">
+                <h2>Company Spotlights</h2>
+                <div id="spotlights-container"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>Edo State Chamber of Commerce</strong></p>
+            <p>12 Ring Road, Benin City, Edo State, Nigeria</p>
+            <p>info@edochamber.org | +234 52 000 1111</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://github.com" target="_blank">GitHub</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> • Anthony Agbonoga • Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
