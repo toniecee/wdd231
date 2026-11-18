@@ -397,11 +397,6 @@ footer p {
     right: 1rem;
 }
 
-.navigation.open {
-    display: flex;
-    flex-direction: column;
-}
-
 nav {
     position: absolute;
     top: 100%;
@@ -410,22 +405,6 @@ nav {
     background-color: #1e293b;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
     z-index: 10;
-}
-
-.navigation {
-    display: none;
-    list-style: none;
-}
-
-#menu {
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
 }
 
 #menu::before {
