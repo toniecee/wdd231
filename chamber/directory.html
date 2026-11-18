@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edo State Chamber of Commerce - Directory</title>
     <meta name="description" content="Directory of member businesses in the Edo State Chamber of Commerce.">
     <meta name="author" content="Anthony Agbonoga">
-    
+
     <meta property="og:title" content="Edo State Chamber of Commerce Directory">
     <meta property="og:description" content="Explore local member businesses and partners in Edo State.">
-    <meta property="og:image" content="https://anthonyagbonoga.github.io/wdd231/chamber/images/hero-chamber.jpg">
-    <meta property="og:url" content="https://anthonyagbonoga.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://toniecee.github.io/wdd231/chamber/images/hero.jpg">
+    <meta property="og:url" content="https://toniecee.github.io/wdd231/chamber/directory.html">
 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
@@ -26,13 +27,14 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/directory.js" defer></script>
 </head>
+
 <body>
     <header>
         <div class="logo-box">
-            <img src="images/favicon.ico" alt="Logo" width="36" height="36">
+            <img src="images/favicon.ico" alt="Edo State Chamber of Commerce logo" width="36" height="36">
             <span class="site-title">Edo Chamber of Commerce</span>
         </div>
-        <button id="menu" aria-label="Toggle Menu"></button>
+        <button id="menu" type="button" aria-label="Toggle navigation" aria-expanded="false"></button>
         <nav>
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
@@ -45,13 +47,17 @@
 
     <main>
         <h1>Business Directory</h1>
-        
+
         <div class="menu-toggle-bar">
             <button id="grid" class="active" aria-label="Grid View">
-                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M3 3h8v8H3V3m10 0h8v8h-8V3M3 13h8v8H3v-8m10 0h8v8h-8v-8Z"/></svg>
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                    <path fill="currentColor" d="M3 3h8v8H3V3m10 0h8v8h-8V3M3 13h8v8H3v-8m10 0h8v8h-8v-8Z" />
+                </svg>
             </button>
             <button id="list" aria-label="List View">
-                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M3 4h18v2H3V4m0 7h18v2H3v-2m0 7h18v2H3v-2Z"/></svg>
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                    <path fill="currentColor" d="M3 4h18v2H3V4m0 7h18v2H3v-2m0 7h18v2H3v-2Z" />
+                </svg>
             </button>
         </div>
 
@@ -72,4 +78,5 @@
         <p id="lastModified"></p>
     </footer>
 </body>
+
 </html>

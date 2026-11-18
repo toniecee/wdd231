@@ -67,3 +67,15 @@
         gap: 1rem;
     }
 }
+
+@media (min-width: 768px) {
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex !important;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+}

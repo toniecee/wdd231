@@ -49,31 +49,14 @@ header {
     cursor: pointer;
 }
 
-#menu::before {
-    content: "≡";
-}
-
-#menu.open::before {
-    content: "X";
-}
-
-nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #1e293b;
-    display: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-    z-index: 10;
-}
-
-nav.open {
-    display: block;
-}
-
 .navigation {
+    display: none;
     list-style: none;
+}
+
+.navigation.open {
+    display: flex;
+    flex-direction: column;
 }
 
 .navigation li a {
@@ -147,11 +130,12 @@ h1 {
 }
 
 .grid .member-card img {
-    width: 100px;
-    height: 75px;
+    width: 120px;
+    height: 90px;
     object-fit: cover;
     border-radius: 4px;
     border: 1px solid #cbd5e1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .grid .member-card h3 {
@@ -258,15 +242,6 @@ footer p {
     font-size: 0.85rem;
 }
 
-.grid .member-card img {
-    width: 120px;
-    height: 90px;
-    object-fit: cover;
-    border-radius: 4px;
-    border: 1px solid #ffffff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
-}
-
 .hero {
     position: relative;
     margin-bottom: 1.5rem;
@@ -326,7 +301,7 @@ footer p {
     border-radius: 6px;
     border: 1px solid #dcdde1;
     padding: 1.2rem;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .card h2 {
@@ -416,4 +391,64 @@ footer p {
     text-decoration: none;
     font-size: 0.85rem;
     font-weight: 500;
+}
+
+#menu {
+    display: block;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.open {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #1e293b;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+.navigation {
+    display: none;
+    list-style: none;
+}
+
+.navigation.open {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.open::before {
+    content: "X";
 }
