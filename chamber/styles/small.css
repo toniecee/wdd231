@@ -41,14 +41,6 @@ header {
     font-size: 1.1rem;
 }
 
-#menu {
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-}
-
 .navigation {
     display: none;
     list-style: none;
@@ -405,10 +397,6 @@ footer p {
     right: 1rem;
 }
 
-.navigation {
-    display: none;
-}
-
 .navigation.open {
     display: flex;
     flex-direction: column;
@@ -427,11 +415,6 @@ nav {
 .navigation {
     display: none;
     list-style: none;
-}
-
-.navigation.open {
-    display: flex;
-    flex-direction: column;
 }
 
 #menu {
