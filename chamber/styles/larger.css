@@ -67,3 +67,8 @@
         gap: 1rem;
     }
 }
+
+.join-container {
+    grid-template-columns: 1.3fr 0.7fr;
+    align-items: start;
+}

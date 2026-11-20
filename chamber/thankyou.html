@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edo State Chamber of Commerce - Thank You</title>
+    <meta name="description" content="Membership application confirmation for the Edo State Chamber of Commerce.">
+    <meta name="author" content="Anthony Agbonoga">
+
+    <meta property="og:title" content="Application Received - Edo State Chamber of Commerce">
+    <meta property="og:description"
+        content="Confirmation of your Edo State Chamber of Commerce membership application.">
+    <meta property="og:image" content="https://toniecee.github.io/wdd231/chamber/images/social-preview.jpg">
+    <meta property="og:url" content="https://toniecee.github.io/wdd231/chamber/thankyou.html">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="images/favicon.ico" alt="Edo State Chamber of Commerce logo" width="36" height="36">
+            <span class="site-title">Edo Chamber of Commerce</span>
+        </div>
+        <button id="menu" type="button" aria-label="Toggle navigation" aria-expanded="false"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Thank You for Applying</h1>
+
+        <section class="thankyou-card">
+            <p>We have received your membership application for the Edo State Chamber of Commerce. Here is a summary of
+                your submitted details:</p>
+            <div id="application-summary" class="summary-details"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>Edo State Chamber of Commerce</strong></p>
+            <p>12 Ring Road, Benin City, Edo State, Nigeria</p>
+            <p>info@edochamber.org | +234 52 000 1111</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://github.com" target="_blank">GitHub</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> • Anthony Agbonoga • Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

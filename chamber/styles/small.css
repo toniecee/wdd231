@@ -415,3 +415,140 @@ nav {
 #menu.open::before {
     content: "X";
 }
+
+.join-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.join-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.25rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+.join-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    font-weight: 700;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+    padding: 0.65rem;
+    border: 1px solid #767676;
+    border-radius: 4px;
+    font: inherit;
+    font-weight: 400;
+}
+
+.join-form input[type="submit"] {
+    margin-top: 0.5rem;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #1b4332;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.join-form input[type="submit"]:hover,
+.join-form input[type="submit"]:focus {
+    background-color: #081c15;
+}
+
+.membership-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.membership-cards h2 {
+    margin: 0;
+}
+
+@keyframes cardFadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.level-card {
+    padding: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    animation: cardFadeSlide 0.6s ease-out both;
+}
+
+.level-card:nth-of-type(2) {
+    animation-delay: 0.1s;
+}
+
+.level-card:nth-of-type(3) {
+    animation-delay: 0.2s;
+}
+
+.level-card:nth-of-type(4) {
+    animation-delay: 0.3s;
+}
+
+.level-card h3 {
+    margin: 0 0 0.4rem;
+}
+
+.level-card p {
+    margin: 0 0 0.75rem;
+}
+
+.modal-open,
+.modal-close {
+    padding: 0.5rem 0.9rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #1b4332;
+    color: #ffffff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.level-modal {
+    max-width: 450px;
+    width: 90%;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #111111;
+}
+
+.level-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.thankyou-card {
+    max-width: 650px;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+.summary-details p {
+    margin: 0.6rem 0;
+}
