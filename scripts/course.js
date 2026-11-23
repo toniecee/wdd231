@@ -6,7 +6,7 @@ const courses = [
         credits: 2,
         certificate: 'Web and Computer Programming',
         description: 'This will introduce students to programming.',
-        technology: [ 'Python' ],
+        technology: ['Python'],
         completed: true
     },
     {
@@ -16,7 +16,7 @@ const courses = [
         credits: 2,
         certificate: 'Web and Computer Programming',
         description: 'This course introduces students to the World Wide Web.',
-        technology: [ 'HTML', 'CSS' ],
+        technology: ['HTML', 'CSS'],
         completed: true
     },
     {
@@ -26,7 +26,7 @@ const courses = [
         credits: 2,
         certificate: 'Web and Computer Programming',
         description: 'CSE 111 students spend more time with functions.',
-        technology: [ 'Python' ],
+        technology: ['Python'],
         completed: true
     },
     {
@@ -36,7 +36,7 @@ const courses = [
         credits: 2,
         certificate: 'Web and Computer Programming',
         description: 'This course will introduce the concepts of object-oriented programming.',
-        technology: [ 'C#' ],
+        technology: ['C#'],
         completed: true
     },
     {
@@ -46,7 +46,7 @@ const courses = [
         credits: 2,
         certificate: 'Web and Computer Programming',
         description: 'This course builds on prior Web Fundamentals knowledge.',
-        technology: [ 'HTML', 'CSS', 'JavaScript' ],
+        technology: ['HTML', 'CSS', 'JavaScript'],
         completed: true
     },
     {
@@ -56,7 +56,7 @@ const courses = [
         credits: 2,
         certificate: 'Web and Computer Programming',
         description: 'This course builds on prior web development skills.',
-        technology: [ 'HTML', 'CSS', 'JavaScript' ],
+        technology: ['HTML', 'CSS', 'JavaScript'],
         completed: false
     }
 ];
@@ -69,15 +69,21 @@ const cseBtn = document.querySelector('#cse-btn');
 
 function displayCourses(filteredCourses) {
     coursesContainer.innerHTML = '';
+
     filteredCourses.forEach(course => {
         const card = document.createElement('div');
         card.classList.add('course-card');
+
         if (course.completed) {
             card.classList.add('completed');
-            card.innerHTML = `✓ ${course.subject} ${course.number}`;
+            card.textContent = `✓ ${course.subject} ${course.number}`;
         } else {
             card.textContent = `${course.subject} ${course.number}`;
         }
+
+        card.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
         coursesContainer.appendChild(card);
     });
 
