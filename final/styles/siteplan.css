@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+    background-color: #f7f8f5;
+    color: #1e2923;
+    line-height: 1.6;
+}
+
+header,
+footer {
+    background-color: #1f4e3d;
+    color: #ffffff;
+    padding: 1.25rem 1rem;
+}
+
+header {
+    border-bottom: 4px solid #9c4a1a;
+}
+
+.site-brand {
+    font-family: "Merriweather", serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.plan-subhead {
+    font-size: 0.95rem;
+    margin-top: 0.25rem;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+}
+
+h1,
+h2 {
+    font-family: "Merriweather", serif;
+    color: #1f4e3d;
+}
+
+h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.plan-card {
+    background-color: #ffffff;
+    border: 1px solid #d6ddd8;
+    border-left: 4px solid #1f4e3d;
+    border-radius: 6px;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.plan-card p {
+    margin-top: 0.5rem;
+}
+
+.plan-card ul {
+    margin-top: 0.5rem;
+    padding-left: 1.25rem;
+}
+
+.plan-card li {
+    margin-bottom: 0.4rem;
+}
+
+.color-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.color-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.color-swatch {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #1e2923;
+}
+
+.swatch-primary {
+    background-color: #1f4e3d;
+}
+
+.swatch-accent {
+    background-color: #9c4a1a;
+}
+
+.swatch-bg {
+    background-color: #f7f8f5;
+}
+
+.swatch-surface {
+    background-color: #ffffff;
+}
+
+.wireframe-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 0.75rem;
+}
+
+.wireframe-item {
+    border: 1px solid #d6ddd8;
+    border-radius: 6px;
+    padding: 0.75rem;
+    background-color: #f7f8f5;
+}
+
+.wireframe-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #d6ddd8;
+    background-color: #ffffff;
+}
+
+.wireframe-item figcaption {
+    margin-top: 0.5rem;
+    font-weight: 700;
+    color: #9c4a1a;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .wireframe-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
